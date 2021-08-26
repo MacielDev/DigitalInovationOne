@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha página</title>
     <script type="text/javascript" src="../js/main.js"></script>
+    <title>Minha página</title>
+    
 </head>
-<body>
-    <label>Nome
-        <input id="nome" type="text" placeholder="Informe seu nome">
-    </label>
-    <label>Idade
-        <input id="idade" type="text" placeholder="Informe sua idade">
-    </label>
-    <button id="verificar" type="button">Verificar</button>
+<body onload="load()">
+    <button type="button">Clique Aqui</button>
+    <p id="agradecimento" onclick="redirecionar()"></p>
+    <p id="mousemove" onmousemove="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui!!!</p>
+    <p id = mousemove2 onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui!!!</p>
+    <select onchange="funcaoChange(this)">
+        <option value="1">Valor1</option>
+        <option value="2">Valor2</option>
+        <option value="3">Valor3</option>
+    </select>
 </body>
 </html>

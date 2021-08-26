@@ -1,8 +1,17 @@
-let nome = document.getElementById('nome').value;
-let idade = document.getElementById('idade').value;
-let verficar = document.getElementById('verificar')
+function redirecionar(){
+    window.location.href="https://github.com/MacielDev"
+}
 
-function verificaIdade(){
-    if(idade >=18) return "maior de 18anos"
-    else return "menor de 18 anos"
+function trocar(elemento){
+    elemento.innerHTML = "Obrigado por passar p mause"
+}
+
+function voltar(elemento){
+    elemento.innerHTML = "Passe o mouse aqui"
+}
+function load(){
+    alert("Pagina carregada")
+}
+function funcaoChange(elemento){
+    console.log(elemento.value)
 }
